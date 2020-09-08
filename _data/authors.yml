@@ -18,6 +18,108 @@ nhandsome:
       1x:            /assets/img/me.jpg
       2x:            /assets/img/me.jpg
 
+###########################################################################
+  # Make Experience List
+  experience:
+  - company: SAMSUNG SDS
+    position: IT Engineer
+    duration: Mar, 2015 &mdash; Mar, 2018
+    summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+
+  # Another Experience List
+  # - company: United Nations Human Rights Council
+  #   position: Director of Digital Strategy
+  #   duration:  Jun, 2010 &mdash; Sept, 2013
+  #   summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+  
+ ########################################################################### 
+  # Make Education List
+  education:
+  - degree: Master's degree, Information Science
+    uni: Kyusyu University(Japan)
+    year: 2020 &mdash; Present
+    awards:
+      - award: Summa Cumme Laude graduate
+    summary: If you had any meaningful roles at college, feel free to write about them here
+
+  - degree: Bachelor's degree, Industrial Engineering
+    uni: Hongik University(Korea)
+    year: 2008 &mdash; 2015
+    award: Most likely to succeed
+    summary: You can choose to have either a single or multiple awards
+###########################################################################
+  # Projects
+  # uncomment the urls if you wish to display them, and add your own URL
+
+  # projects:
+  # - project: jazznotes.io
+  #   role: Founder & Primary Developer
+  #   duration: 2012 &mdash; Present
+  #   # url: "#"
+  #   description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+
+  # Another Projects
+  # - project: Springfield Community Outreach Group
+  #   role: Co-Founder & Organizer
+  #   duration: 2007 &mdash; Present
+  #   # url: "#"
+  #   description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+    
+###########################################################################
+# Skills
+# Organizational leadership
+  skills:
+  - skill: Organizational leadership
+    description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+
+# Communications strategy
+  - skill: Communications strategy
+    description: Content and marketing strategy,
+
+# Digital content development and creation
+# - skill: Digital content development and creation
+#   description: Copy writing, graphic design, web design, front-end web development, print design
+
+###########################################################################
+# Recognitions
+
+# recognition:
+# - award: Outstanding Achievement
+#   organization: Springfield Young Professionals
+#   year: 2010, 2014
+#   summary: Awarded the Outstanding Achievement award for contributions made to the community and professional accomplishments.
+
+# - award: Most Likely To Succeed
+#   organization: Springfield High School
+#   year: 2004
+#   summary: Voted Most Likely To Succeed by a panel of my high school peers.
+
+###########################################################################
+# Associations
+# comment out the urls if you do not wish to display them
+
+# associations:
+# - organization: PETA
+#   role: Volunteer
+#   year: 2001 &mdash; 2010
+#   url: https://www.peta.org/
+#   summary: Organized fund drives and participated in fundraising events for the benefit of PETA's local Springfield operations.
+
+# - organization: Yale Amnesty International
+#   role: Communications coordinator
+#   year: 2002 &mdash; 2004
+#   url: http://campuspress.yale.edu/amnesty/
+#   summary: During my junion and senior years at Yale, I was actively involved in Yale Amnesty International where I helped facilitate our student organization communications through website maintenance, writing for our campus publication, and graphic design of related materials.
+
+###########################################################################
+# Interests
+  interests:
+  - description: Human rights and world affairs
+  - description: Music (baritone saxiphonist)
+  - description: Linguistics
+
+
+
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
@@ -51,14 +153,15 @@ nhandsome:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        beomseok-han-32a16b1b2
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
     email:           mailto:hanbs044@gmail.com
-    rss:             https://nhandsome.github.io/feed.xml
+    # rss:             https://nhandsome.github.io/feed.xml
+    
 
 # Another author
 mdo:
