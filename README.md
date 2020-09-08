@@ -17,7 +17,7 @@ _featured_categories/ : 카테고리 소분류(태그) 폴더
 ＊＊_config.yml : 가장 중요한 환경변수 설정 파일
 ＊＊README.md : GitHub 프로젝트 애서 소개하게 될 글
 **favicon.ico : 블로그 접속 시 브라우저 주소창에 표시되는 대표 아이콘
-about.md : About 메뉴 클릭 시 나타나는 블로그에 대한 소개글
+**about.md : About 메뉴 클릭 시 나타나는 블로그에 대한 소개글
 2. 필요시 변경
 assets/ : 이미지, CSS 등을 저장 폴더
 _layouts/ : 포스트를 감싸기 위한 레이아웃 정의 폴더(페이지, 구성요소 등 UI변경 시 수정)
