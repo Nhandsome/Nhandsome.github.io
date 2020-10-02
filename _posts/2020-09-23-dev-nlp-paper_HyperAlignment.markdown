@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "[Paper] ABWGAN"
-subtitle:   "Subtitle - Bicycle Travel in Europe"
+title:  "[Paper] UNSUPERVISED HYPERALIGNMENT FOR MULTILINGUAL WORD EMBEDDINGS"
+subtitle:   "Subtitle - UNSUPERVISED HYPERALIGNMENT FOR MULTILINGUAL WORD EMBEDDINGS"
 categories: dev
 tags: nlp
 comments: true
 ---
 ## Describe
-> [`Wasserstein GAN based on Autoencoder with back-translation for cross-lingual embedding mappings`](https://www.sciencedirect.com/science/article/pii/S0167865519303538)을 읽고 정리?한 글.<br>
+> [`UNSUPERVISED HYPERALIGNMENT FOR MULTILINGUAL WORD EMBEDDINGS`](https://research.fb.com/wp-content/uploads/2019/05/Unsupervised-Hyper-alignment-for-Multilingual-Word-Embeddings.pdf)을 읽고 정리?한 글.<br>
 한국어 韓国語
 
 <!-- ## 目次
