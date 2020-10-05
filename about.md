@@ -5,9 +5,8 @@ menu: true
 order: 10
 ---
 
-## 소개
+## About me
 
-홈페이지 제작 테스트
-Homepage Development Test
-ホームページ　作り　テスト
+また学生になった元勤め人<br>
+専門的で重い話より、理解しやすい話を伝えたいです。
 

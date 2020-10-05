@@ -24,7 +24,7 @@ nhandsome:
   - company: SAMSUNG SDS
     position: IT Engineer
     duration: Mar, 2015 &mdash; Mar, 2018
-    summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+    summary: As a novice developer, <ul class="resume-item-list"><li>Firewall Policy Management System Project(Front-end & Operation)</li><li>Amway Korea Website Project(Front-end)</li><li>Quality Assurance(Test automation)</li></ul>
 
   # Another Experience List
   # - company: United Nations Human Rights Council
@@ -39,14 +39,15 @@ nhandsome:
     uni: Kyusyu University(Japan)
     year: 2020 &mdash; Present
     awards:
-      - award: Summa Cumme Laude graduate
-    summary: If you had any meaningful roles at college, feel free to write about them here
+      - award: Natural Language Processing Lab
+      - award: Data Science Course
+    # summary: If you had any meaningful roles at college, feel free to write about them here
 
   - degree: Bachelor's degree, Industrial Engineering
     uni: Hongik University(Korea)
     year: 2008 &mdash; 2015
-    award: Most likely to succeed
-    summary: You can choose to have either a single or multiple awards
+    # award: Most likely to succeed
+    # summary: You can choose to have either a single or multiple awards
 ###########################################################################
   # Projects
   # uncomment the urls if you wish to display them, and add your own URL
@@ -68,13 +69,13 @@ nhandsome:
 ###########################################################################
 # Skills
 # Organizational leadership
-  skills:
-  - skill: Organizational leadership
-    description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+#   skills:
+#   - skill: Organizational leadership
+#     description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
 
-# Communications strategy
-  - skill: Communications strategy
-    description: Content and marketing strategy,
+# # Communications strategy
+#   - skill: Communications strategy
+#     description: Content and marketing strategy,
 
 # Digital content development and creation
 # - skill: Digital content development and creation
@@ -114,9 +115,9 @@ nhandsome:
 ###########################################################################
 # Interests
   interests:
-  - description: Human rights and world affairs
-  - description: Music (baritone saxiphonist)
-  - description: Linguistics
+  - description: Bicycle Travel in Europe(2014)
+  - description: Korea-India Forum for Sustainable Development(2012)
+  - description: Japanese
 
 
 
