@@ -36,7 +36,7 @@ nhandsome:
   # Make Education List
   education:
   - degree: Master's degree, Information Science
-    uni: Kyusyu University(Japan)
+    uni: Kyushu University(Japan)
     year: 2020 &mdash; Present
     awards:
       - award: Natural Language Processing Lab
