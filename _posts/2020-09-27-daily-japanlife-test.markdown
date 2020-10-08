@@ -6,7 +6,7 @@ categories: daily
 tags: japanlife
 comments: true
 ---
-## 개요
+## Describe
 > `田舎？での生活`を初めてから変わった僕のライフサイクルです。こんな生活に慣れないと！
 
 ## 目次

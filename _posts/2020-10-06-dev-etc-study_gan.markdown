@@ -38,7 +38,7 @@ comments: true
 <br>　**Generator는 노이즈($$\varepsilon$$)를 Input으로 필요로하며,**, $$P\left(X_f | Y_c\right)$$ 
 - Y라는 class를 목표로, X라는 feature를 그럴듯하게 만들어낸다.
 - 만들어진 Fake feature $$X'_f$$를 Discriminator에게 보내, 평가를 받는다.
-- Discriminator의 판단 $$P(Y_c \vert X'_f)$$을 Cost로 하여, $$\theta$$를 학습,
+- Discriminator의 판단 $$P(Y_c \vert X'_f)$$ 을 Cost로 하여, $$\theta$$를 학습,
 - 좋은 Discriminator로 충분히 학습이 끝나면, 노이즈 $$\varepsilon$$와 $$P(X_f)$$로 언제든지 Fake자료를 만들 수 있다.
 
 ### <a name="jump2">Binary Cross Entropy(BCE) Loss</a>
