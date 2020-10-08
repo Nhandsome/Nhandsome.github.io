@@ -59,7 +59,7 @@ $$-\frac 1 m \displaystyle\sum_{i=1}^m \Big[ y^i logD(x^i,\theta) + (1-y^i)log(1
 |1|0.99|0.00...01|
 |1|0.01|-Infinity|
 
-　\$$y^i = 1\$$(True)일 때, \$\$D(x^i,\theta)\$\$가 좋은 평가를 하면 Loss를 0에 가깝게 하고, 나쁜 평가를 하면 Loss를 무한대에 가깝게 한다.(식의 앞에 -가 있으니까.) **그리고 $$(1-y^i)log(1-D(x^i,\theta))$$는 위의 표와 반대로, $$y^i = 0$$(False)일 때 Loss를 발생시킨다.**
+　$$y^i = 1$$(True)일 때, $$D(x^i,\theta)$$가 좋은 평가를 하면 Loss를 0에 가깝게 하고, 나쁜 평가를 하면 Loss를 무한대에 가깝게 한다.(식의 앞에 -가 있으니까.) **그리고 $$(1-y^i)log(1-D(x^i,\theta))$$는 위의 표와 반대로, $$y^i = 0$$(False)일 때 Loss를 발생시킨다.**
 
 > 따라서 두개의 Cross Entropy Loss를 더한 후 그 값을 최소화시키는 $$\theta$$를 찾는 것이, Discriminator의 과제인 것이다. **(확률적으로)악질 범죄자는 잘 잡으면서, 무고한 시민은 체포하지 않는 경찰**이 탄생.
 
