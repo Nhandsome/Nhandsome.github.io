@@ -7,18 +7,20 @@ tags: etc
 comments: true
 ---
 ## Describe
-> [`Build Basic Generative Adversarial Networks (GANs)`](https://www.coursera.org/learn/build-basic-generative-adversarial-networks-gans/home/welcome)를 청강, 개인적인 정리①<br>
+> [`Build Basic Generative Adversarial Networks (GANs)`](https://www.coursera.org/learn/build-basic-generative-adversarial-networks-gans/home/welcome)를 청강, 개인적인 정리<br>
+Week 1: Intro to GANs<br>
 한국어 韓国語
 
 ## 目次
-- [Week 1: Intro to GANs ①](#jump1)
+- [Week 1: Intro to GANs](#jump1)
   - [Binary Cross Entropy(BCE) Loss](#jump2)
 
-**　Coursera에 GAN 강좌가 올라와서 가볍게 청강 중입니다. 기본적인 신경망학습, Pytorch 지식이 있는 사람들 대상으로 하고 있는 것 같지만, 초반부에 조금씩 설명해주는 듯 하네요. 딱히 GAN에 대한 설명을 하기 위한 글은 아니고, 개인적으로 정리하는 수준의 글입니다.**
+**　Coursera에 GAN 강좌가 올라와서 가볍게 청강 중입니다. 기본적인 신경망학습, Pytorch 지식이 있는 사람들 대상으로 하고 있는 것 같지만, 초반부에 조금씩 설명해주는 듯 하네요. 딱히 GAN에 대한 설명을 하기 위한 글은 아니고, 개인적으로 정리하는 수준의 글입니다.**<br>
+**　수식이 잘 보이지 않을 떄에는 페이지 새로고침(F５)을 한 번 해보세요. 뭐가 문제인지ㅠ..**
 
 <br><br><br>
 
-## <a name="jump1">Week 1: Intro to GANs ①</a>
+## <a name="jump1">Week 1: Intro to GANs</a>
 　**GAN의 목표**는, Generator와 Discriminator의 경쟁학습을 통해, `원하는 이미지를 생성할 수 있는 Generator를 학습`시키는 것이다. 좋은 Discriminator가 있어서 좋은 Generator가 학습되었다면, 이후에 Discriminator는 없어도 된다.<br><br>
 　**GAN의 활용**
 - 그림을 대충 그려놓으면 그럴듯한 작품으로 바꿔주는 기능
@@ -40,6 +42,11 @@ comments: true
 - 만들어진 Fake feature $$X'_f$$를 Discriminator에게 보내, 평가를 받는다.
 - Discriminator의 판단 $$P(Y_c \vert X'_f)$$ 을 Cost로 하여, $$\theta$$를 학습,
 - 좋은 Discriminator로 충분히 학습이 끝나면, 노이즈 $$\varepsilon$$와 $$P(X_f)$$로 언제든지 Fake자료를 만들 수 있다.
+
+<br>　**Superior Discriminator는 좋은가?**
+- Generator는 Discriminator의 판단에 따라 성장해나간다.
+- Discriminator가 100% Fake를 판단해버리면, Generator는 속이는 의미가 없어지며,
+- '81% 진짜같았어', '25% 진짜같았어' 와 같이 Generator의 성능에 적합한 Discriminator가 필요하다.
 
 ### <a name="jump2">Binary Cross Entropy(BCE) Loss</a>
 　**Binary Cross Entropy Loss**는 자주 등장하는 개념이며, 이해하기 쉽게 설명이 되어 있어서 정리해보려고 한다. 엔트로피와 같은 개념은 다른 자료를 찾아보면 구체적인 이야기가 있을 것이니, GAN관점에서 `Binary문제(Fake or Real)을 판단할 때, Discriminator는 어떤 생각을 하고 있을까?`를 생각해보자.<br>
@@ -65,6 +72,6 @@ $$-\frac 1 m \displaystyle\sum_{i=1}^m \Big[ y^i logD(x^i,\theta) + (1-y^i)log(1
 
 <br><br>
 
-**[`Build Basic Generative Adversarial Networks (GANs)`](https://www.coursera.org/learn/build-basic-generative-adversarial-networks-gans/home/welcome)강의의 1주차 과정①　정리 끝. 1주차 내용의 50%정도 인 것 같습니다. 4주차 강의까지 있고, 이후에 Advanced강의 Apply강의까지 있는 것 같은데, 시간이 날 때마다 정리하겠습니다.**
+**이외 Pytorch의 간단한 사용법의 강의, [Pytorch Tutorial](https://tutorials.pytorch.kr/beginner/deep_learning_60min_blitz.html)를 참고해도 될 것 같다.**
 
 
