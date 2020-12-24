@@ -24,15 +24,55 @@ comments: true
 - tf.constant produces constant tensors and tf.Variable tensors can be modified.
 - stock, slice, reshape : change tensor dimensions
 - tf.Variable : The values can be changed by tf.Variable.assign
-  - w = tf.Variable (modified during training)
-  - x = tf.constant
-  - tf.matmul(w,x)<br>
 
-**Example for making a simple neural network model to understand tensor**
 
 ```python
-s = "Python syntax highlighting"
-print s
+## tensorflow opperation can take navive python types and Numpy array as operands
+a_py = [1,2]
+b_np = np.array([3,4])
+c_tf = tf.constant([5,6])
+
+temp = tf.multiply(tf.add(a_py, b_np),c_tf)
+temp.numpy()
+
+
+## Example of Linear Regression with Tensorflow
+## low level code
+## Loss Function (MES)
+def loss_mes(X, Y, w0, w1):
+  Y_hat = X * w0 + w1
+  errors = (Y_hat - Y)**2
+  return tf.reduce_mean(errors)
+
+## Gradient Function
+## tf.GradientTape()
+def compute_gradients(X, Y, w0, w1):
+  with tf.GradientTape() as tape:
+    loss = loss_mes(X, Y, w0, w1)
+  return tape.gradient(loss, [w0, w1])
+
+## we can check results of compute_gradients
+X = tf.constant(range(10), dtype=float(32))
+Y = 2 * X + 10 
+
+w0 = tf.Variable(0.0)
+w1 = tf.Variable(0.0)
+
+dw0, dw1 = compute_gradients(X, Y, w0, w1)
+
+## Set steps and learning_rate
+STEPS = 1000
+LEARNING_RATE = 0.2
+MSG = 'STEP {step} - loss: {loss}, w0: {w0}, w1: {w1}'
+
+for step in range(0, STEP + 1):
+  dw0, dw1 = compute_gradients(X, Y, w0, w1)
+  w0.assign_sub(dw0 * LEARNING_RATE)
+  w1.assign_sub(dw1 * LEARNING_RATE)
+
+  if step%100 == 0:
+    loss = loss_mes(X, Y, w0, w1)
+    print(MSG.format(step=step, loss=loss, w0=w0.numpy(), w1=w1.numpy()))
 ```
 
 <br><br><br>
