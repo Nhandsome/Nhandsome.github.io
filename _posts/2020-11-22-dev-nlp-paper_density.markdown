@@ -50,19 +50,23 @@ comments: true
 ## <a name="jump3">구체적인 모델</a>
 
 ### <a name="jump4">**Notation과 기초가 되는 수식**</a>
+
   - $$X, Y \in \Bbb{R}^d$$ : **Source and Target Word Embedding 공간의 벡터집합**
   - $$x_i, y_i$$ : **X, Y에서의 실제 단어**
-  - $$f_{xy}(\cdot)=W_{xy}, f_{yx}(\cdot)=W_{yx}$$ : **Mapping function과 Matrix**
-
+  - $$f_{xy}(\cdot)=W_{xy},~f_{yx}(\cdot)=W_{yx}$$ : **Mapping function과 Matrix**
+<br>
 Word Embedding 공간의 확률밀도에 관하여,
+<br>
   - $$z, u$$ : **Source and Target 공간의 임의의 벡터**
   - $$p_\theta(z) = N(x;~0,I)$$ : **z에 대한 Prior Distribution**, 가우시안 분포
-
-을 나타내고 있으며, 확률밀도의 변수변환에 의해서<br>
+<br>
+을 나타내고 있으며, 확률밀도의 변수변환에 의해서
+<br>
 $$z \thicksim p_\theta(z), ~u = f_{xy}(z)$$<br>
 $$p_\theta(u) = p_\theta(z)|det(J(f^{-1}(u)))|$$
 
-  > $$T$$(Target Space)를 통해서 원하는 언어$$S_i$$로의 Mapping이 가능하며, `$$M_i$$는 $$T$$로의 Encoding, $$M_i^T$$는 $$T$$로부터의 Decoding 연산`으로 생각할 수 있다. 
+  > 확률변수 X, Y 의 관계를 알고 있을 때, `X의 확률밀도함수를 Y에 관한 확률밀도함수로 변환`할 수 있다. 
+  이 개념을 고차원 벡터를 변수로 하는 공간에 적용한 것으로 이해하면 되겠다. 함수 f는 역함수가 존재한다고 가정하였다.
 
    <br><br>
 
