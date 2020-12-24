@@ -5,6 +5,7 @@ subtitle:   "Subtitle - Density Matching for BWE"
 categories: dev
 tags: nlp
 comments: true
+published: false
 ---
 ## Describe
 > [`Density Matching for Bilingual Word Embedding`](https://arxiv.org/abs/1904.02343)을 읽고 정리<br>
