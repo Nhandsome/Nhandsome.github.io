@@ -10,6 +10,13 @@ Github blogを作ってみようかなとしてます。
 테스트 깃헙 연동
 bundle exec jekyll serve
 
+TO DO
+ - Data Science Project (Feet Image Analysis)
+ - Kaggle Titanic and Basic for doing EDA
+ - Cross-lingual Word Embedding
+ - Flow of NLP
+ - Google Colab 
+
 1. 반드시 변경
 _featured_tags/ : 카테고리 대분류 폴더
 _featured_categories/ : 카테고리 소분류(태그) 폴더
