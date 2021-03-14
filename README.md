@@ -11,10 +11,10 @@ Github blogを作ってみようかなとしてます。
 bundle exec jekyll serve
 
 TO DO
- - Data Science Project (Feet Image Analysis)
- - Kaggle Titanic and Basic for doing EDA
- - Cross-lingual Word Embedding
- - Flow of NLP
+ - Data Science Project (Feet Image Analysis) :: Capture Weekends
+ - Kaggle Titanic and Basic for doing EDA :: Upload codes to github and Describe availible info on blog (Weekends)
+ - Cross-lingual Word Embedding :: 3/12
+ - Flow of NLP :: 
  - Google Colab 
 
 1. 반드시 변경
