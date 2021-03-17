@@ -5,6 +5,7 @@ subtitle:   "Subtitle - Coursera, Intoroduction to Tensorflow_2"
 categories: dev
 tags: nlp
 comments: true
+published: false
 ---
 ## Describe
 > Summarizing Coursera lectures, [`Introduction to Tensorflow`](https://www.coursera.org/learn/intro-tensorflow/home/welcome)<br>
