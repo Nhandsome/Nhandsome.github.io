@@ -24,7 +24,7 @@ nhandsome:
   - company: SAMSUNG SDS
     position: IT Engineer
     duration: Mar, 2015 &mdash; Mar, 2018
-    summary: As a novice developer, <ul class="resume-item-list"><li>Firewall Policy Management System Project(Front-end & Operation)</li><li>Amway Korea Website Project(Front-end)</li><li>Quality Assurance(Test automation)</li></ul>
+    summary: As a novice developer, <ul class="resume-item-list"><li>Firewall Policy Management System Project(Development & Operation)</li><li>Amway Korea Website Project(Front-end)</li><li>Quality Assurance(Test automation)</li></ul>
 
   # Another Experience List
   # - company: United Nations Human Rights Council
@@ -35,7 +35,7 @@ nhandsome:
  ########################################################################### 
   # Make Education List
   education:
-  - degree: Master's degree, Information Science
+  - degree: Master's degree, Informatics
     uni: Kyushu University(Japan)
     year: 2020 &mdash; Present
     awards:
