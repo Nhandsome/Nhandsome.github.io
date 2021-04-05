@@ -16,8 +16,9 @@ comments: true
   - [二つのContinuous Variableの関係が知りたい時](#jump4)
 - [Numeric and Categorical Variable](#jump5)
   - [Category基準によるContinueous分布が知りたい時](#jump6)
-- [Categorical and Categorical Variable](#jump7)
-  - [Category基準によるCategorical分布が知りたい時](#jump8)
+  - [Category基準によるContinueous分布が知りたい時(大量のデータ)](#jump7)
+- [Categorical and Categorical Variable](#jump8)
+  - [Category基準によるCategorical分布が知りたい時](#jump9)
 
 
 <br><br><br>
@@ -71,7 +72,6 @@ sns.scatterplot(data=df_temp,x='bmi',y='charges',hue='smoker')
 ## <a name="jump5">Numeric and Categorical Variable</a>
 ### <a name="jump6">Category基準によるContinueous分布が知りたい時</a>
   **SwarmPlot**<br>
-- 
 - X(喫煙状況)基準によるY(治療費)の分布を比較しやすい。
 - [二つのContinuous Variableの関係が知りたい時](#jump4)で扱ったScatterPlotをより明確に確認する。
 ```python
@@ -80,11 +80,25 @@ plt.title('SWARM PLOT_SMOKER_CHARGES',fontsize=20,color='w')
 sns.swarmplot(data=df_temp,x='smoker',y='charges')
 ```
 ![EDA4](/assets/img/dev/eda_4.jpg)
+<br><br>
+
+### <a name="jump7">Category基準によるContinueous分布が知りたい時（大量のデータ）</a>
+  **BoxPlot**<br>
+- 一般的に使われる方法。
+- [Category基準によるContinueous分布が知りたい時](#jump６)よりグラフ生成が早く、median・分布などが見やすい。
+```python
+plt.figure(figsize=(20,10))
+plt.subplot(1,2,1)
+sns.boxplot(data=train_df, x=sta_dist, y=TARGET)
+plt.subplot(1,2,2)
+sns.stripplot(data=train_df, x=sta_dist, y=TARGET)
+```
+![EDA9](/assets/img/dev/eda_9.png)
 <br><br><br>
 
 
-## <a name="jump7">Categorical and Categorical Variable</a>
-### <a name="jump8">Category基準によるCategorical分布が知りたい時</a>
+## <a name="jump8">Categorical and Categorical Variable</a>
+### <a name="jump9">Category基準によるCategorical分布が知りたい時</a>
   **BarChart**<br>
 - [Titanic Dataset](https://www.kaggle.com/c/titanic)
 - X(Survived/Dead)基準によるY(座席のClass)の分布を比較しやすい。
